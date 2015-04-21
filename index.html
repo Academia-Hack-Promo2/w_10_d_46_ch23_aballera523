@@ -6,11 +6,90 @@
     <meta charset="UTF-8">
     <meta name="description" content="Como ya Ud. es parte del personal de tecnología del Banco MyBank, ahora le es asignada la tarea de construir un sistema, que le permita a cada agencia manejar de manera organizada el orden en que serán atendidos los clientes que asistan a dicha agencia." />
     <meta name="keywords" content="" />
-    <script src="js/myScript.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-reverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/MyBank.jpg" alt="">
+                    </a>
+                </div>
 
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#clientes">Clientes</a>
+                        </li>
+                        <li><a href="#empleados">Empleados</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <section id="clientes">
+            <h1>Área de Clientes</h1>
+            <h2> Bienvenido a MyBank, por favor seleccione el tipo de operación a realizar.</h2>
+
+            <br>
+            <h3>Seleccione <strong>"Taquilla"</strong> para las siguientes operaciones en la :</h3>
+            <ul>
+                <li>Depósito</li>
+                <li>Retiro</li>
+                <li>Actualizar Saldos</li>
+                <li>Pago de Servicios</li>
+            </ul>
+            <br>
+            <button id="agregarCliente1" onclick="agregarCliente1()" value="Tomar Numero">Taquilla 3ra Edad</button>
+            <br>
+            <button id="agregarCliente3" onclick="agregarCliente3()" value="Tomar Numero">Taquilla General</button>
+            <br>
+
+            <p>Seleccione <strong>"Servicios"</strong> para las siguientes operaciones:</p>
+            <ul>
+                <li>Abrir Cuenta</li>
+                <li>Cerrar Cuentas</li>
+                <li>Depósitos a Plazo</li>
+                <li>CADIVI</li>
+                <li>Otros</li>
+            </ul>
+            <br>
+            <button id="agregarCliente2" onclick="agregarCliente2()" value="Tomar Numero">Servicios 3ra Edad</button>
+            <br>
+            <button id="agregarCliente4" onclick="agregarCliente4()" value="Tomar Numero">Servicios 3ra Edad</button>
+
+
+            <button onclick="">Atención</button>
+
+        </section>
+        <section id="empleados">
+            <h1>Taquilla</h1>
+            <br>
+            <button id="llamarCliente1" onclick="atenderCliente()" value="Llamar Cliente">Llamar Cliente</button>
+            <br>
+            <h1>Servicios</h1>
+            <br>
+            <button id="llamarCliente2" onclick="atenderCliente" value="Llamar Cliente">Llamar Cliente</button>
+            <br>
+        </section>
+    </div>
+
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myScript2.js"></script>
 </body>
 
 </html>
