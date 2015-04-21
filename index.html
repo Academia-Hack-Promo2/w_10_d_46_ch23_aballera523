@@ -28,7 +28,7 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right" id="right">
                         <li><a href="#clientes">Clientes</a>
                         </li>
                         <li><a href="#empleados">Empleados</a>
@@ -71,25 +71,22 @@
             <br>
             <button id="agregarCliente4" onclick="agregarCliente4()" value="Tomar Numero">Servicios 3ra Edad</button>
 
-
-            <button onclick="">Atención</button>
-
         </section>
         <section id="empleados">
             <h1>Taquilla</h1>
             <br>
-            <button id="llamarCliente1" onclick="atenderCliente()" value="Llamar Cliente">Llamar Cliente</button>
+            <button id="llamarCliente1" onclick="atenderTaquilla()" value="Llamar Cliente">Llamar Cliente</button>
             <br>
             <h1>Servicios</h1>
             <br>
-            <button id="llamarCliente2" onclick="atenderCliente" value="Llamar Cliente">Llamar Cliente</button>
+            <button id="llamarCliente2" onclick="atenderServicio()" value="Llamar Cliente">Llamar Cliente</button>
             <br>
         </section>
     </div>
 
     <script src="js/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/myScript2.js"></script>
+    <script src="js/myScript.js"></script>
 </body>
 
 </html>

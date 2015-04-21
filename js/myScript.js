@@ -29,15 +29,21 @@ function atenderCliente3() {
     cont3++;
     console.log(taquillaGral)
 }
+var cont3ra2 = 0;
+var cont3ra = 0;
 
-function atenderCliente() {
-    long = taquilla3ra.length
-    if (long / 3 == 0) {
-        atenderCliente1()
+function atenderTaquilla() {
+
+    if (agregarCliente1[0] != 0 && (cont3ra2 == 0 || cont3ra2 == 1 || cont3ra2 == 2)) {
+        atenderCliente1();
+        cont3ra++;
+        cont3ra2 = 0;
+        cont3ra2 = cont3ra;
     } else {
         atenderCliente3()
     }
     console.log(taquilla3ra)
+    console.log(taquillaGral)
 }
 
 
@@ -73,6 +79,18 @@ function atenderCliente4() {
     console.log(servicioGral)
 }
 
-function llamarCliente1() {
+var cont3ra1 = 0;
+var cont3ra3 = 0;
 
+function atenderServicio() {
+    if (agregarCliente2[0] != 0 && (cont3ra3 == 0 || cont3ra3 == 1 || cont3ra3 == 2)) {
+        atenderCliente2();
+        cont3ra1++;
+        cont3ra3 = 0;
+        cont3ra3 = cont3ra1;
+    } else {
+        atenderCliente4()
+    }
+    console.log(servicio3ra)
+    console.log(servicioGral)
 }

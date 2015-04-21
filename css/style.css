@@ -1,0 +1,9 @@
+.navbar {
+    height: 100px;
+}
+
+#right {
+    margin-top: 45px;
+    margin-right: 30px;
+    font-size: 20px;
+}
