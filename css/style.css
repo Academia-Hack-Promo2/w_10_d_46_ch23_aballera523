@@ -1,9 +1,37 @@
+body {
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
 .navbar {
     height: 100px;
 }
 
+h1 {
+    text-align: center;
+    background-color: beige;
+}
+
+h2 {
+    text-align: center;
+    color: blue;
+}
+
 #right {
-    margin-top: 45px;
+    margin-top: 30px;
     margin-right: 30px;
+    font-size: 30px;
+    color: darkblue;
+}
+
+#right:hover {
+    background-color: red;
+}
+
+button {
+    height: 120px;
+    width: 120px;
+    background-color: blue;
+    color: aqua;
     font-size: 20px;
 }

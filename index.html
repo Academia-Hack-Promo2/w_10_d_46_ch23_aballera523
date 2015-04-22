@@ -41,45 +41,115 @@
         </nav>
 
         <section id="clientes">
-            <h1>Área de Clientes</h1>
-            <h2> Bienvenido a MyBank, por favor seleccione el tipo de operación a realizar.</h2>
+            <div class="row">
+                <h1>Área de Clientes</h1>
+                <h2> Bienvenido a MyBank, por favor seleccione el tipo de operación a realizar.</h2>
+                <div class="col-md-6">
+                    <h3>Seleccione <strong>"Taquilla"</strong> para las siguientes operaciones:</h3>
+                    <ul>
+                        <li>Depósito</li>
+                        <li>Retiro</li>
+                        <li>Actualizar Saldos</li>
+                        <li>Pago de Servicios</li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button id="agregarCliente1" onclick="agregarCliente1()" value="Tomar Numero">Taquilla 3ra Edad</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="numtaquilla3ra"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button id="agregarCliente3" onclick="agregarCliente3()" value="Tomar Numero">Taquilla General</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="numtaquillaGral"></div>
+                        </div>
+                    </div>
 
-            <br>
-            <h3>Seleccione <strong>"Taquilla"</strong> para las siguientes operaciones en la :</h3>
-            <ul>
-                <li>Depósito</li>
-                <li>Retiro</li>
-                <li>Actualizar Saldos</li>
-                <li>Pago de Servicios</li>
-            </ul>
-            <br>
-            <button id="agregarCliente1" onclick="agregarCliente1()" value="Tomar Numero">Taquilla 3ra Edad</button>
-            <br>
-            <button id="agregarCliente3" onclick="agregarCliente3()" value="Tomar Numero">Taquilla General</button>
-            <br>
+                </div>
 
-            <p>Seleccione <strong>"Servicios"</strong> para las siguientes operaciones:</p>
-            <ul>
-                <li>Abrir Cuenta</li>
-                <li>Cerrar Cuentas</li>
-                <li>Depósitos a Plazo</li>
-                <li>CADIVI</li>
-                <li>Otros</li>
-            </ul>
-            <br>
-            <button id="agregarCliente2" onclick="agregarCliente2()" value="Tomar Numero">Servicios 3ra Edad</button>
-            <br>
-            <button id="agregarCliente4" onclick="agregarCliente4()" value="Tomar Numero">Servicios 3ra Edad</button>
 
+                <div class="col-md-6">
+                    <h3>Seleccione <strong>"Servicios"</strong> para las siguientes operaciones:</h3>
+                    <ul>
+                        <li>Abrir Cuenta</li>
+                        <li>Cerrar Cuentas</li>
+                        <li>Depósitos a Plazo</li>
+                        <li>CADIVI</li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button id="agregarCliente2" onclick="agregarCliente2()" value="Tomar Numero">Promotores 3ra Edad</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="numservicio3ra"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button id="agregarCliente4" onclick="agregarCliente4()" value="Tomar Numero">Promotores General</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="numservicioGral"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="empleados">
-            <h1>Taquilla</h1>
+            <h1>Área de Empleados</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Taquillas</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button id="atenderCliente1" onclick="atenderCliente1()" value="Tomar Numero">Taquilla 3ra Edad</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="llamtaquilla3ra"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button id="atenderCliente3" onclick="atenderCliente3()" value="Tomar Numero">Taquilla General</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="llamtaquillaGral"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <h2>Promotores</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button id="atenderCliente2" onclick="atenderCliente2()" value="Tomar Numero">Promotores 3ra Edad</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="llamservicio3ra"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button id="atenderCliente4" onclick="atenderCliente4()" value="Tomar Numero">Promotores General</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="llamservicioGral">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             <br>
-            <button id="llamarCliente1" onclick="atenderTaquilla()" value="Llamar Cliente">Llamar Cliente</button>
             <br>
-            <h1>Servicios</h1>
             <br>
-            <button id="llamarCliente2" onclick="atenderServicio()" value="Llamar Cliente">Llamar Cliente</button>
+            <br>
+            <br>
             <br>
         </section>
     </div>
