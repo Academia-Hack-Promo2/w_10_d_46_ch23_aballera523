@@ -149,3 +149,10 @@ function atenderCliente4() {
     }
     console.log(servicioGral);
 }
+
+var element = document.getElementById("test");
+element.addEventListener("click", listenerClick);
+
+function listenerClick() {
+    console.log("click")
+}
